@@ -33,10 +33,10 @@ namespace AdonaiApi
             services.AddCors();
             services.AddMvc();
 
-            services.AddDbContext<AdonaiDataContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddDbContext<AdonaiDataContext>(options =>
+            //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddScoped<LeadController, LeadController>();         
+            //services.AddScoped<LeadController, LeadController>();         
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
