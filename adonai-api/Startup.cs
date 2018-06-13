@@ -30,7 +30,6 @@ namespace AdonaiApi
 
             Configuration = builder.Build();
 
-            services.AddCors();
             services.AddMvc();
 
             //services.AddDbContext<AdonaiDataContext>(options =>
