@@ -4,7 +4,7 @@ namespace AdonaiApi.Controllers
 {
     public class HomeController : Controller
     {
-        [Route("/")]
+        [Route("/version")]
         public string GetVersion() => "1.0.0v";
     }
 }
